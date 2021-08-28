@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Status</title>
+</head>
+<body>
+
+    <h3> First Name: {{  first_name }}    </h3>
+    <h3> Last Name: {{  last_name }}    </h3>
+    <h3> Roll Number: {{  roll_number }}    </h3>
+
+    <div>
+            <h2> Course Enrollment Details </h2>
+        
+                {% if all|length == 0 %}
+                   
+                <div>
+                    No Data to show. Please enroll in some courses and come back..
+                  </div>
+                    {% else %} 
+                    <table border = "1px" style = "border-collapse:collapse">
+                          <tr>
+                            <th>SNo</th>
+                            <th>Course Name</th>
+                            <th>Course Code</th>
+                            <th>Description</th>
+                          </tr>
+                
+                            {% for one in all %}
+                            <tr>
+                                <th>{{loop.index}}</th>
+                                <td>{{one.course_name}}</td>
+                                <td>{{one.course_code}}</td>
+                                <td>{{one.course_description}}</td>
+                            </tr>
+              
+                            {% endfor %}
+                    </table>
+                {% endif %}        
+    </div>
+
+    <br> <br>
+    <a href="/"> Go Home </a>
+
+   
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Update student </title>
+</head>
+<body>
+
+    <h1> Enter details in the form below to update </h1>
+    <form action="updatedetails" method="post">
+
+        <label for = "ro">Enter Roll Number(cannot be changed): </label>
+        <input type="text" id = "ro" name = "roll" required />
+
+        <br> <br> <br>
+
+        <label for="na">Enter New First Name: </label>
+        <input type = "text" id = "na" name="f_name" required />
+
+        <br><br><br>
+
+        <label for = "me">Enter New Last name: </label>
+        <input type="text" id = "me" name = "l_name" />
+
+        <br><br><br>
+        <table>
+            <tr>
+                <td>
+                    <label>Select Courses: </label>
+                </td>
+                <td>
+                    <input type="checkbox" name = "c1" value="v1" /> <br> 
+                </td>
+                <td>
+                    MAD I
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label> </label>
+                </td>
+                <td>
+                    <input type="checkbox" name = "c1" value="v2" /> <br> 
+                </td>
+                <td>
+                    DBMS
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label> </label>
+                </td>
+                <td>
+                    <input type="checkbox" name = "c1" value="v3" /> <br> 
+                </td>
+                <td>
+                    PDSA
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label> </label>
+                </td>
+                <td>
+                    <input type="checkbox" name = "c1" value="v4" /> <br> 
+                </td>
+                <td>
+                    BDM
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <input type="submit" value="submit" />
+
+    </form>
+    
+</body>
+</html>
